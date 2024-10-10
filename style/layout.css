@@ -25,3 +25,8 @@
 .flex-column {
   flex-direction: column;
 }
+
+#character-img {
+  width: 20vw;
+  height: auto;
+}
