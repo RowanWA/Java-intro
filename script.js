@@ -14,7 +14,6 @@ myButton.onclick = clickFunction
 function clickFunction() {
     characterCounter = characterCounter + 1;
 
-
     console.log("The button has been clicked");
     
     if(characterCounter > 3) {
