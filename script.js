@@ -12,15 +12,16 @@ let characterCounter = 1;
 myButton.onclick = clickFunction
 
 function clickFunction() {
-    
+    characterCounter = characterCounter + 1;
 
-    console.log("The button has been clicked")
+
+    console.log("The button has been clicked");
     
     if(characterCounter > 3) {
         characterCounter =1;
     }
 
-    myParagraph.innerHTML = "I am on character " + characterCounter
+    myParagraph.innerHTML = "I am on character " + characterCounter;
 
     if(characterCounter === 1) {
         characterImg.src = imageOne;
@@ -37,7 +38,6 @@ function clickFunction() {
         return;
     }
     
-    characterCounterCounter = characterCounter + 1;
     
     // characterImg.src = "assets/kisspng-bulbasaur-portable-network-graphics-image-ivysaur-1713906417665.webp"
     
