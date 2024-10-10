@@ -1,11 +1,13 @@
+const myButton = document.getElementById("button")
+const myParagraph = document.getElementById("my-paragraph")
 
-// document.getElementById("my-paragraph").innerHTML = "test";
+let clickCounter = 0;
 
-
-{/* <button onclick= "document.getElementById('button').innerHTML"> thx</button>; */ }
-
-document.getElementById('button').addEventListener("click", clickFunction);
+myButton.onclick = clickFunction
 
 function clickFunction() {
-    document.getElementById("my-paragraph").innerHTML = "test";
+
+clickCounter = clickCounter + 1;
+
+    myParagraph.innerHTML = "I have been clicked " + clickCounter + " times"
 }
