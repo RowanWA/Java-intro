@@ -19,3 +19,11 @@ a {
   user-select: none;
   cursor: pointer;
 }
+
+img {
+  /* defining image size/position */
+  max-height: 30vw;
+  height: auto;
+  max-height: 30vh;
+  /* margin: 5px; */
+  /* padding: 5px; */

@@ -2,14 +2,23 @@ const myButton = document.getElementById("button")
 const myParagraph = document.getElementById("my-paragraph")
 const characterImg = document.getElementById("character-img")
 
-const imageOne = "assets/eab8104df5b39b69e868de47675737c1.jpg";
-const imageTwo = "assets/kisspng-bulbasaur-portable-network-graphics-image-ivysaur-1713906417665.webp";
-const imageThree = "assets/squirtle.jpeg";
+const imageOne = "assets/charzard.png";
+const imageTwo = "assets/bulbasaur.png";
+const imageThree = "assets/squirtle.png";
 
+const altOne = "Charzard";
+const altTwo = "Bulbasaur";
+const altThree = "Squirtle";
+
+const nameOne = "Charzard";
+const nameTwo = "Bulbasaur";
+const nameThree = "Squirtle";
 
 let characterCounter = 1;
 
 myButton.onclick = clickFunction
+
+myParagraph.innerHTML = nameOne
 
 function clickFunction() {
     characterCounter = characterCounter + 1;
@@ -24,16 +33,22 @@ function clickFunction() {
 
     if(characterCounter === 1) {
         characterImg.src = imageOne;
+        characterImg.alt = altOne;
+        myParagraph.innerHTML = nameOne
         return;
     }
 
     if(characterCounter === 2) {
         characterImg.src = imageTwo;
+        characterImg.alt = altTwo;
+        myParagraph.innerHTML = nameTwo
         return;
     }
 
     if(characterCounter === 3) {
         characterImg.src = imageThree;
+        characterImg.alt = altThree;
+        myParagraph.innerHTML = nameThree
         return;
     }
     
