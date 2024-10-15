@@ -1,18 +1,24 @@
+const imageSources = ["assets/charzard.png", "assets/bulbasaur.png", "assets/squirtle.png"]
+
 const myButton = document.getElementById("button")
 const myParagraph = document.getElementById("my-paragraph")
 const characterImg = document.getElementById("character-img")
 
-const imageOne = "assets/charzard.png";
-const imageTwo = "assets/bulbasaur.png";
-const imageThree = "assets/squirtle.png";
+// const imageOne = "assets/charzard.png";
+// const imageTwo = "assets/bulbasaur.png";
+// const imageThree = "assets/squirtle.png";
 
-const altOne = "Charzard";
-const altTwo = "Bulbasaur";
-const altThree = "Squirtle";
+const altSources = ["Charzard", "Bulbasaur", "Squirtle"]
 
-const nameOne = "Charzard";
-const nameTwo = "Bulbasaur";
-const nameThree = "Squirtle";
+// const altOne = "Charzard";
+// const altTwo = "Bulbasaur";
+// const altThree = "Squirtle";
+
+const nameSources = ["Charzard", "Bulbasaur", "Squirtle"]
+
+// const nameOne = "Charzard";
+// const nameTwo = "Bulbasaur";
+// const nameThree = "Squirtle";
 
 let characterCounter = 1;
 
@@ -32,23 +38,23 @@ function clickFunction() {
     myParagraph.innerHTML = "I am on character " + characterCounter;
 
     if(characterCounter === 1) {
-        characterImg.src = imageOne;
-        characterImg.alt = altOne;
-        myParagraph.innerHTML = nameOne
+        characterImg.src = imageSources [characterCounter - 1];
+        characterImg.alt = altSources [characterCounter - 1];
+        myParagraph.innerHTML = nameSources [characterCounter - 1];
         return;
     }
 
     if(characterCounter === 2) {
-        characterImg.src = imageTwo;
-        characterImg.alt = altTwo;
-        myParagraph.innerHTML = nameTwo
+        characterImg.src = imageSources [1];
+        characterImg.alt = altSources [1];
+        myParagraph.innerHTML = nameSources [1];
         return;
     }
 
     if(characterCounter === 3) {
-        characterImg.src = imageThree;
-        characterImg.alt = altThree;
-        myParagraph.innerHTML = nameThree
+        characterImg.src = imageSources [2];
+        characterImg.alt = altSources [2];
+        myParagraph.innerHTML = nameSources [2];
         return;
     }
     

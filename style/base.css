@@ -25,5 +25,27 @@ img {
   max-height: 30vw;
   height: auto;
   max-height: 30vh;
+  width: auto;
   /* margin: 5px; */
   /* padding: 5px; */
+}
+
+.flex-container {
+display: flex;
+flex-direction: column;
+/* allowing for wrapping */
+flex-wrap: wrap;
+justify-content: space-evenly;
+/* aligning content to center */
+/* row-gap:calc (500px + ((100vw - (2000px)) * 0.1px)); */
+align-items: center;
+border-style: dashed;
+border-width: 5px;
+border-color: black;
+width: 50vw;
+height: 500px;
+background-color: #2596be;
+color: white;
+}
+
+/* container width-half height-500px bg-marine_blue text-white  */
