@@ -34,5 +34,17 @@
 #complement-one {
   width: 5vw;
   height: auto;
-  position: absolute;
+  position: relative;
+}
+
+#complement-two {
+  width: 5vw;
+  height: auto;
+  position: relative;
+}
+
+#complement-three {
+  width: 5vw;
+  height: auto;
+  position: relative;
 }

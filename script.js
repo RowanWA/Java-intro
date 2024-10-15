@@ -39,6 +39,8 @@ function clickFunction() {
 }
 
 const fancyHat = document.getElementById("complement-one");
+const fancyHat2 = document.getElementById("complement-two");
+const fancyHat3 = document.getElementById("complement-three");
 const dropZone = document.getElementById ("character-img");
 
 function onDrop(event) { 
@@ -67,3 +69,4 @@ function onDragStart(event) {
 dropZone.ondrop = onDrop;
 dropZone.ondragover = onDragOver;
 fancyHat.ondragstart = onDragStart;
+
