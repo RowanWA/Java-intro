@@ -20,19 +20,33 @@
   <div class="container width-full height-full">
     <!-- inner div - floating in middle of webpage -->
     <div class="flex-container">
-    <!-- <div class= "container width-half height-500px bg-marine_blue text-white"> -->
+
       <!-- some text -->
       <p>
         <img id="character-img" src="assets/charzard.png" alt="Charzard">
       </p>
 
-      <button type="button" id="button">Click me</button>
-      <p id="my-paragraph">Charzard</p>
+      <button type="button" id="button">Change Starter</button>
+
+      <h1>
+        <p id="my-paragraph">
+          Charzard
+        </p>
+      </h1>
+      <div>
+        <h2>
+          <label for="name">Change Character Name (2 to 10 characters):</label>
+        </h2>
+      </div>
+      <div>
+        <input type="text" id="name" required minlength="2" maxlength="10" size="30" />
+        <button type="button" id="nameButton">Submit</button>
+      </div>
     </div>
-    
+
   </div>
   <div>
-    
+
   </div>
 
 
