@@ -23,7 +23,7 @@ a {
 img {
   /* defining image size/position */
   max-height: 30vw;
-  height: auto;
+  height: 30vh;
   max-height: 30vh;
   width: auto;
   /* margin: 5px; */
@@ -34,8 +34,8 @@ img {
 display: flex;
 flex-direction: column;
 /* allowing for wrapping */
-flex-wrap: wrap;
-justify-content: space-evenly;
+/* flex-wrap: wrap; */
+justify-content: center;
 /* aligning content to center */
 /* row-gap:calc (500px + ((100vw - (2000px)) * 0.1px)); */
 align-items: center;
@@ -43,9 +43,10 @@ border-style: dashed;
 border-width: 5px;
 border-color: black;
 width: 50vw;
-height: 500px;
+height: auto;
 background-color: #2596be;
 color: white;
 }
 
 /* container width-half height-500px bg-marine_blue text-white  */
+
